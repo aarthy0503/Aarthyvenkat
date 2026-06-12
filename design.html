@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MY DESIGN | Aarthy Venkat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+    --dark-green: #2C3B2D;
+    --mid-green: #3A4E3B;
+    --orange: #D4602A;
+    --yellow: #F5B731;
+    --cream: #F5EFE0;
+    --black: #1A1A1A;
+    --white: #ffffff;
+    --text-dark: #1e1e1e;
+  }  
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+}
+
+/* Header */
+header{
+    padding:60px 10%;
+    text-align:center;
+}
+.home-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#ffffff;
+    color:#000;
+    text-decoration:none;
+    border-radius:50%;
+    font-size:24px;
+    z-index:9999;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+.home-btn:hover{
+    transform:scale(1.1);
+    background:#f0f0f0;
+}
+header h1{
+    font-family:'DM Serif Display', serif;
+    font-size:48px;
+    letter-spacing:1px;
+}
+
+header p{
+    color:#aaa;
+    margin-top:10px;
+}
+
+/* Grid Section */
+.work-section{
+    padding:40px 10%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+}
+
+/* Card */
+.card{
+    background:#1a1a1a;
+    border-radius:16px;
+    overflow:hidden;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#222;
+}
+
+.card img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.card-content p{
+    font-size:14px;
+    color:#bbb;
+    line-height:1.5;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:12px;
+    padding:8px 14px;
+    border:1px solid #fff;
+    border-radius:20px;
+    font-size:12px;
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Aarthy venkat</h1>
+    <h1>MY DESIGNS</h1>
+    <p>Some of my creative designs, edits, and visual experiments</p>
+    <a href="portfolio.html" class="home-btn">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+    </svg>
+</a>
+</header>
+
+<section class="work-section">
+
+    <div class="card">
+        <img src="bugatti (2).png" alt="">
+        <div class="card-content">
+            <h3>Poster Design</h3>
+            <p>High-performance automotive poster inspired by luxury supercar branding.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="911 GT3RS.png" alt="">
+        <div class="card-content">
+            <h3>911</h3>
+           <p>Bold Porsche-inspired visual showcasing speed, elegance, and precision.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="porsche (A4).png" alt="">
+        <div class="card-content">
+            <h3>Porshe</h3>
+           <p>Creative composition blending motion, lighting, and premium aesthetics.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="BMW (1).png" alt="">
+        <div class="card-content">
+            <h3>BMW</h3>
+           <p>Dynamic sports-car artwork focused on power, performance, and style.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="_ITALIAN DESIGN. UNMATCHED PERFORMANCE (2).png" alt="">
+        <div class="card-content">
+            <h3>Lamborghini</h3>
+            <p>Luxury automotive concept highlighting Italian design and aggressive styling.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="SHOE (A4).png" alt="">
+        <div class="card-content">
+            <h3>Shoe design</h3>
+            <p>Modern product advertisement featuring clean layouts and commercial appeal.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="PORSCHE (2).png" alt="">
+        <div class="card-content">
+            <h3>Porsche design</h3>
+            <p>Minimal yet striking automotive poster emphasizing detail and craftsmanship.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>

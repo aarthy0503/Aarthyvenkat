@@ -64,7 +64,206 @@ body::after{
     z-index:-1;
     pointer-events:none;
 }
+/* =========================
+   TABLET VIEW
+========================= */
+@media (max-width: 992px){
 
+  nav{
+    padding:15px 25px;
+  }
+
+  .nav-links{
+    gap:18px;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding-top:120px;
+  }
+
+  .hero-left,
+  .hero-right{
+    padding:30px;
+    align-items:center;
+  }
+
+  .hero-img-wrap{
+    width:280px;
+    height:340px;
+    margin:auto;
+  }
+
+  .hero-title-wrap{
+    text-align:center;
+  }
+
+  .hero-socials{
+    align-items:center;
+  }
+
+  .about-grid,
+  .edu-exp-section,
+  .skills-section,
+  .lang-hobbies{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .portrait-wrap{
+    margin:auto;
+  }
+
+  .software-grid{
+    justify-content:center;
+  }
+
+  .coding-icons{
+    justify-content:center;
+  }
+
+  .hobbies-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+
+/* =========================
+   MOBILE VIEW
+========================= */
+@media (max-width: 768px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+    padding:15px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .hero{
+    padding-top:150px;
+  }
+
+  .hero-left,
+  .hero-right{
+    padding:20px;
+  }
+
+  .hero-img-wrap{
+    width:240px;
+    height:300px;
+  }
+
+  .hero-title{
+    font-size:52px;
+  }
+
+  .hero-title-outline{
+    font-size:48px;
+  }
+
+  .about-section,
+  .edu-exp-section,
+  .skills-section,
+  .lang-hobbies{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .about-left h1{
+    font-size:40px;
+  }
+
+  .portrait-bg{
+    width:220px;
+    height:280px;
+  }
+
+  .contact-card{
+    width:100%;
+    margin-left:0;
+  }
+
+  .software-grid{
+    justify-content:center;
+  }
+
+  .software-card{
+    width:85px;
+    height:85px;
+  }
+
+  .design-tags{
+    justify-content:center;
+  }
+
+  .coding-icons{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .lang-grid{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .hobbies-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .scroll-btn{
+    width:70px;
+    height:70px;
+  }
+
+  footer{
+    padding:25px 15px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px){
+
+  .hero-title{
+    font-size:42px;
+  }
+
+  .hero-title-outline{
+    font-size:38px;
+  }
+
+  .hero-img-wrap{
+    width:220px;
+    height:270px;
+  }
+
+  .section-heading{
+    font-size:28px !important;
+  }
+
+  .hobbies-grid{
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+
+  .software-card{
+    width:80px;
+    height:80px;
+  }
+
+  .software-card span{
+    font-size:12px;
+  }
+}
   /* ── NAV ── */
   nav {
     position: fixed;
